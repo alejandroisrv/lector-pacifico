@@ -7,10 +7,11 @@
     tools:context="com.example.manuel.swipetabs.MainActivity"
     android:gravity="center">
 
-    <Button
-        android:id="@+id/boton_activity"
+    <TextView
+        android:id="@+id/start_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mostrar segunda activity" />
+        android:text="Empezar"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

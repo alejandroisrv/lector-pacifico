@@ -47,6 +47,7 @@ public class TabsActivity extends ActionBarActivity implements ActionBar.TabList
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -143,6 +144,10 @@ public class TabsActivity extends ActionBarActivity implements ActionBar.TabList
                 case 1:
                     tabFragment = new TabBFragment();
                     break;
+
+                case 2:
+                    tabFragment = new BlankFragment();
+                    break;
             }
             return tabFragment;
         }
@@ -150,7 +155,7 @@ public class TabsActivity extends ActionBarActivity implements ActionBar.TabList
         @Override
         public int getCount() {
             // Show 2 total pages.
-            return 2;
+            return 3;
         }
 
         @Override
@@ -160,10 +165,13 @@ public class TabsActivity extends ActionBarActivity implements ActionBar.TabList
 
             switch (position) {
                 case 0:
-                    section = "SECTION 1";
+                    section = "LIBROS";
                     break;
                 case 1:
-                    section = "SECTION 2";
+                    section = "REVISTAS";
+                    break;
+                case 2:
+                    section = "PIONERS";
                     break;
             }
             return section;
