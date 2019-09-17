@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PacificoReader</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">REVISTAS</string>
+    <string name="tab_text_2">LIBROS</string>
+    <string name="tab_text_3">PIONERS</string>
+    <string name="title_activity_home">Pacifico Reader</string>
+
+</resources>
