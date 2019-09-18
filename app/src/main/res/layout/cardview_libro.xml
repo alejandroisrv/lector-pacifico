@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_libro"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="16dp"
+    app:cardElevation="@dimen/cardview_default_elevation">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <ImageView
+                android:id="@+id/libro_imagen"
+                android:layout_width="70dp"
+                android:layout_height="140dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="16dp"
+                android:background="@android:drawable/sym_contact_card"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/libro_name"
+                android:layout_toRightOf="@+id/libro_imagen"
+                android:layout_alignParentTop="true"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/libro_descripcion"
+                android:layout_toRightOf="@+id/libro_imagen"
+                android:layout_below="@+id/libro_name"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>

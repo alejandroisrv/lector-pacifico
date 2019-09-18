@@ -7,5 +7,9 @@
     <string name="tab_text_2">LIBROS</string>
     <string name="tab_text_3">PIONERS</string>
     <string name="title_activity_home">Pacifico Reader</string>
+    <string name="DescargandoImagen">Descargado recursos</string>
+    <string name="mensajeImagenGuardada">Recursos descargados</string>
+    <string name="title_activity_libro_detail">LibroDetail</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
