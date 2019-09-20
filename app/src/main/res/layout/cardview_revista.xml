@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/revista_imagen"
+            android:layout_width="130dp"
+            android:layout_height="195dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/bottom_bar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/revista_nombre"
+            android:layout_toRightOf="@+id/revista_imagen"
+            android:layout_alignParentTop="true"
+            android:textSize="30sp"
+            android:text="Revista nombre"
+            />
+
+        <TextView
+            android:id="@+id/revista_descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/revista_nombre"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/revista_imagen"
+            android:text="descripcion" />
+
+        <TextView
+            android:id="@+id/revista_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/revista_descripcion"
+            android:layout_marginTop="29dp"
+            android:layout_toRightOf="@+id/revista_imagen"
+            android:text="descripcion" />
+
+        <TextView
+            android:id="@+id/revista_articulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/revista_fecha"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/revista_imagen"
+            android:text="descripcion" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

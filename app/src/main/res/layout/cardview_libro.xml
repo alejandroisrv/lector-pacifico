@@ -1,45 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cardview_libro"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_marginBottom="16dp"
-    app:cardElevation="@dimen/cardview_default_elevation">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            >
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cardview_libro"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
 
             <ImageView
                 android:id="@+id/libro_imagen"
-                android:layout_width="70dp"
-                android:layout_height="140dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:layout_marginRight="16dp"
-                android:background="@android:drawable/sym_contact_card"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:drawable/bottom_bar"
                 android:scaleType="centerCrop" />
 
             <TextView
+                android:id="@+id/libro_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/libro_name"
-                android:layout_toRightOf="@+id/libro_imagen"
-                android:layout_alignParentTop="true"
-                android:textSize="30sp"
-                />
+                android:text="Nombre"
+                android:textSize="28sp" />
 
             <TextView
+                android:id="@+id/libro_descripcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/libro_descripcion"
-                android:layout_toRightOf="@+id/libro_imagen"
-                android:layout_below="@+id/libro_name"
-                />
+                android:text="Nombre"
+                android:textSize="16sp" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>

@@ -3,17 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.pacificoreader.Libro.LibroFragment"
-    android:padding="20dp"
-    >
+    android:paddingTop="25dp">
 
     <!-- TODO: Update blank fragment layout -->
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_libro"
+        android:id="@+id/rv_libro_gratis"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </androidx.recyclerview.widget.RecyclerView>
+
 </FrameLayout>
         

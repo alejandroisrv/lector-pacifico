@@ -10,10 +10,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.pacificoreader.Libro.SqlLite.LibroSqlAdapter;
+
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int PERMISO_CODE = 100;
     TextView startLector;
+    boolean newDatos = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +29,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         startLector = findViewById(R.id.startLector);
-        new DownloadImage(MainActivity.this);
+
+        if(newDatos){
+            new DownloadImage(MainActivity.this);
+            LibroSqlAdapter DbLibro = new LibroSqlAdapter(MainActivity.this);
+            ArrayList<String> Datos = new ArrayList<>();
+            Datos.add("Libro1");
+            Datos.add("");
+            Datos.add("Descripcion");
+            Datos.add("libro.jpg");
+            Datos.add("Roberto");
+            DbLibro.insert(Datos);
+        }
+
 
         startLector.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,10 +51,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
-
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,  @NonNull int[] grantResults)

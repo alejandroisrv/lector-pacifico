@@ -48,7 +48,7 @@ public class LibroAdapterRecyclerView extends RecyclerView.Adapter<LibroAdapterR
 
 
         holder.nombre.setText(libro.getNombre());
-        holder.descripcion.setText(libro.getSubtitulo());
+        holder.descripcion.setText(libro.getDescripcion());
 
 
 

@@ -27,6 +27,8 @@ public class RevistaFragmentMain extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_revista, container, false);
+
+
     }
 
     @Override
